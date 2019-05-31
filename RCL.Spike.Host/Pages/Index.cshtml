@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="text-center">
+    <h1 class="display-4">View Component</h1>
+    <vc:alert-button id="my-control-id"></vc:alert-button>	
+	<vc:alert-button id="my-other-control-id"></vc:alert-button>	
+</div>
+@section  Scripts {
+	<script type="text/javascript" src="~/js/rcl-spike-alert-button.js"></script>
+}
